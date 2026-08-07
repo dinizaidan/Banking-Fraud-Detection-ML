@@ -37,6 +37,7 @@ Before model development, EDA was conducted to better understand the dataset, id
 
 ### Fraud Distribution
 ![Fraud Distribution](Images/FraudFlag.png)
+
 The bar chart illustrates the class distribution of the target variable, showing that the dataset is imbalanced. 
 
 ### Correlation Heatmap
@@ -70,6 +71,7 @@ The feature ranking identifies the variables that contributed most to distinguis
 | Decision Tree | 0.9110 | 0.5906 | 0.9387 | 0.7250 | 0.9446 |
 
 **ROC Comparison**
+
 ![ROC Comparison](Images/ROC_Comparison.png)
 
 ### Confusion Matrices
