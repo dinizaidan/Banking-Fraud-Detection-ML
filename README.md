@@ -1,6 +1,6 @@
 # Banking Fraud Detection using Machine Learning
-This project compares multiple supervised machine learning algorithms for detecting fraudulent retail banking transactions using Python and Scikit-learn.
-The project covers the complete machine learning pipeline, including exploratory data analysis, data preprocessing, feature engineering, model training, hyperparameter tuning, and performance evaluation. Logistic Regression, Decision Tree, and Random Forest are compared to determine the most effective model for fraud detection.
+This repository contains a machine learning coursework project completed for the **Machine Learning** course in the **Master of Data Science** programme at **Universiti Kebangsaan Malaysia (UKM)**.
+The project compares multiple supervised machine learning algorithms for detecting fraudulent retail banking transactions using Python and Scikit-learn.
 
 ## Project at a Glance
 | Item | Details |
@@ -16,23 +16,10 @@ The project covers the complete machine learning pipeline, including exploratory
 | Language | Python |
 
 ## Project Overview
-Financial fraud poses significant challenges for banking institutions due to increasing transaction volumes and evolving fraud patterns. This project evaluates three supervised machine learning algorithms to classify banking transactions as fraudulent or legitimate. The study compares model performance using multiple evaluation metrics and investigates the impact of feature engineering and hyperparameter tuning on fraud detection accuracy.
-
-## Repository Structure
-```
-Banking-Fraud-Detection-ML
-│
-├── notebooks/
-├── images/
-├── docs/
-├── data/
-├── README.md
-├── LICENSE
-└── requirements.txt
-```
+Financial fraud is a major challenge for banking institutions due to the increasing volume of digital transactions. This project evaluates three supervised machine learning algorithms for classifying banking transactions as fraudulent or legitimate. Model performance is compared using multiple evaluation metrics to identify the most suitable approach for fraud detection.
 
 ## Dataset
-The dataset used in this project is publicly available on Kaggle.
+This project uses the publicly available Retail Banking Fraud Dataset from Kaggle.
 | Attribute | Value |
 |------------|-------|
 | Source | [Kaggle Dataset](https://www.kaggle.com/datasets/deepeshkansotia/banking-fraud-detection-and-risk-analytics-dataset) |
@@ -43,14 +30,14 @@ The dataset used in this project is publicly available on Kaggle.
 
 ## Methodology
 ![Methodology Workflow](Images/Workflow.jpeg)
-The project follows a complete machine learning workflow beginning with data understanding and preprocessing, followed by feature engineering and exploratory data analysis. Three classification models were developed and evaluated using multiple performance metrics. The best-performing model was then optimized using `GridSearchCV` to produce the final fraud detection model.
+The project follows a complete machine learning workflow beginning with data understanding and preprocessing, followed by feature engineering and exploratory data analysis. Three supervised classification models were developed and evaluated using multiple performance metrics. The best-performing model was then optimized using `GridSearchCV` to produce the final fraud detection model.
 
 ## Exploratory Data Analysis (EDA)
 Before model development, EDA was conducted to better understand the dataset, identify potential issues, and examine relationships between variables.
 
 ### Fraud Distribution
 ![Fraud Distribution](Images/FraudFlag.png)
-The bar chart show how the target in this data is imbalance. 
+The bar chart illustrates the class distribution of the target variable, showing that the dataset is imbalanced. 
 
 ### Correlation Heatmap
 ![Correlation Heatmap](Images/CorrelationHeatmap.png)
@@ -65,7 +52,7 @@ Feature engineering and feature selection were performed to identify the most in
 
 ### Top Features Based on Mutual Information
 ![Mutual Information](Images/FeatureImportance.png)
-The ranking highlights the features that contributed most to distinguishing fraudulent and legitimate transactions.
+The feature ranking identifies the variables that contributed most to distinguishing fraudulent and legitimate transactions.
 
 ## Machine Learning Models
 | Model |	Why it was chosen |
@@ -92,16 +79,27 @@ The ranking highlights the features that contributed most to distinguishing frau
 
 **Key Finding**
 - Logistic Regression achieved the highest ROC-AUC score (0.9797).
-- Feature engineering improved model performance.
+- Feature engineering contributed to improved model performance.
 - Class imbalance required careful evaluation using Recall and ROC-AUC rather than Accuracy alone.
 - Logistic Regression was selected as the final model because it achieved the highest ROC-AUC and recall while remaining interpretable, making it well suited for fraud detection.
 
 ## Tech Stack
 Python | Pandas | NumPy | Scikit-learn | Matplotlib | Google Colab
 
+## Quick Start
+1. Download the dataset from Kaggle.
+2. Upload the dataset to Google Colab.
+3. Open `Notebook.ipynb`.
+4. Update the dataset path if required.
+5. Run all cells sequentially.
+
+## Notebook
+The complete implementation is available in the notebook below.
+- [Notebook](Notebook.ipynb)
+
 ## Documentation
-- [Project Report](docs/Mini Project ML.pdf)
-- [Project Summary](docs/Project_Summary.pdf)
+- [Project Report](docs/Report.pdf)
+- [Project Summary](docs/Summary.png)
 
 ## Contact
 For any questions or feedback: dininadwah@gmail.com / [linkedin](https://www.linkedin.com/in/dznadwah/)
